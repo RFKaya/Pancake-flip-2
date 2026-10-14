@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Theme: Gündüz (Default) */
+  --renk-ana: #B45309;
+  --renk-ana-koyu: #7C3A0A;
+  --renk-ana-yazi: #FFFFFF;
+  --renk-koyu: #3B2416;
+  --renk-logo: #F59E0B;
+  --ust-yazi: #FFF8EC;
+  --zemin: #FFF8EC;
+  --kart: #FFFFFF;
+  --kart-hover: #FDF9F3;
+  --yazi: #3B2416;
+  --yazi-soluk: #7A5A45;
+  --kenar: #EBD9C3;
+  --vurgu: #BE123C;
+  --basari: #0F766E;
+
+  /* Doneness tokens */
+  --krep-cig: #F3E3C3;
+  --krep-az: #F2D272;
+  --krep-orta: #D99A2B;
+  --krep-iyi: #A8641C;
+  --krep-fazla: #5A3216;
+  --krep-yanik: #1F1511;
+  --halka-gri: #B8A99A;
+
+  /* Scene tokens */
+  --sahne-duvar: #FCE8D8;
+  --sahne-duvar-koyu: #F6D2BA;
+  --sahne-tezgah: #F3C6A5;
+  --sahne-tezgah-koyu: #D9A07C;
+  --sahne-tabak: #5FD3C4;
+  --sahne-tabak-koyu: #35A596;
+  --sahne-tava: #7A7F92;
+  --sahne-tava-koyu: #4E5262;
+  --sahne-yuz: #FFFFFF;
+}
+
+:root[data-tema="gece"], :root.dark {
+  --renk-ana: #F59E0B;
+  --renk-ana-koyu: #A85F06;
+  --renk-ana-yazi: #1E1510;
+  --renk-koyu: #120C08;
+  --renk-logo: #F59E0B;
+  --ust-yazi: #FFF8EC;
+  --zemin: #1E1510;
+  --kart: #2A1F18;
+  --kart-hover: #332720;
+  --yazi: #FDF3E3;
+  --yazi-soluk: #C9B09A;
+  --kenar: #4A3628;
+  --vurgu: #FB7185;
+  --basari: #2DD4BF;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--zemin);
+  color: var(--yazi);
+  margin: 0;
+  padding: 0;
+}
+
+code, kbd, samp, pre, .font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Custom scrollbar matching brand */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--kenar);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--yazi-soluk);
+}

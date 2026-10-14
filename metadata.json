@@ -1,0 +1,6 @@
+{
+  "name": "Pancake Flip! — Veri Şeması ve Yönetim Paneli",
+  "description": "Pancake Flip! krep restoranı oyunu için kapsamlı veri şeması, denge motoru, simülatör ve operasyonel yönetim paneli.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
